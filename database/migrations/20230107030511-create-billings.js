@@ -9,8 +9,21 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
-        type: Sequelize.STRING
+      full_name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      identification: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      method_paid: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      total_paid: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
       createdAt: {
         allowNull: false,
