@@ -5,6 +5,11 @@ const app = express();
 //Setings
 const PORT = process.env.PORT || 3030;
 
+
+const reservationRouter = require("./routes/reservation")
+
+app.use("/reservation", reservationRouter)
+
 app.get('/', function (req, res) {
     res.send("HOlaaaa")
 } )
