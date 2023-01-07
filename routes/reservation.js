@@ -6,7 +6,7 @@ const {all, create, update, remove } = require("../controllers/reservationContro
 router
     .get("/", all)
     .post("/create", create)
-    .patch("update", update)
-    .delete("remove", remove)
+    .patch("/update", update)
+    .delete("/remove", remove)
 
 module.exports = router    

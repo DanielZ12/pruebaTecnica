@@ -15,7 +15,7 @@ module.exports = {
       },
       
       count_days:{
-        type: Sequelize.DATE,
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       billing_id:{
@@ -37,11 +37,9 @@ module.exports = {
         }
       },
       createdAt: {
-        allowNull: false,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
         type: Sequelize.DATE
       }
     });

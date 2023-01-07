@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Reservations.init({
     room: DataTypes.INTEGER,
-    count_days: DataTypes.DATE,
+    count_days: DataTypes.INTEGER,
     billing_id: DataTypes.INTEGER,
     status_id: DataTypes.INTEGER
   }, {
