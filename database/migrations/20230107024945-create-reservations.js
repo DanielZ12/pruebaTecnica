@@ -19,6 +19,7 @@ module.exports = {
         allowNull: false,
       },
       billing_id:{
+        type: Sequelize.INTEGER,
         references: {
           model: {
             tableName: "Billings"
@@ -27,6 +28,7 @@ module.exports = {
         }
       },
       status_id: {
+        type: Sequelize.INTEGER,
         references: {
           model: {
             tableName: "Status"
